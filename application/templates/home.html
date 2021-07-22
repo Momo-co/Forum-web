@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    {% for post in all_post: %}
+
+        <h1>{{ post.id }} {{ post.content }}</h1>
+        
+    {% endfor %}
+        
+{% endblock body %}
