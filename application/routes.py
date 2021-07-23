@@ -51,13 +51,20 @@ def edit(post_number):
 @app.route('/change/<int:comment_number>', methods = ['GET', 'POST'])
 def change(comment_number):
     form = BasicForm()
-    comment = Comment.query.get(comment_number)
+    comment_to_change = Comment.query.get(comment_number)
     if request.method == 'POST':
-        comment.message = form.modify_comment.data
-        db.session.add(comment)
+        comment_to_change.message = form.modify_comment.data
+        db.session.add(comment_to_change)
         db.session.commit()
-        return redirect(url_for('forum', id = comment.post_id))
+        return redirect(url_for('forum', id = comment_to_change.post_id))
     else:
-        return render_template('comment_edit.html', form = form, comment = comment)
+        return render_template('comment_edit.html', form = form, comment_to_change = comment_to_change)
+
+@app.route('/delete/<int:post_id>')
+def delete(post_id):
+    post_to_delete = Post.query.get(post_id)
+    db.session.delete(post_to_delete)
+    db.session.commit()
+    return redirect(url_for('home'))
 
 
