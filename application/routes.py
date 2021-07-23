@@ -67,4 +67,11 @@ def delete(post_id):
     db.session.commit()
     return redirect(url_for('home'))
 
+@app.route('/remove/<int:comment_id>')
+def remove(comment_id):
+    comment_to_delete = Comment.query.get(comment_id)
+    db.session.delete(comment_to_delete)
+    db.session.commit()
+    return redirect(url_for('forum', id = comment_to_delete.post_id))
+
 
