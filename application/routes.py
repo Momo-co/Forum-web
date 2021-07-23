@@ -22,3 +22,18 @@ def post():
     else:
         return render_template('create.html', form = form)
 
+@app.route('/comment/<int:id>', methods = ['GET', 'POST'])
+def comment(id):
+    form = BasicForm()
+    current_post = Post.query.get(id)
+    all_comment = Comment.query.all()
+    if request.method == 'POST':
+        new_comment = Comment(message = form.comment.data)
+        new_comment.post_id = id
+        db.session.add(new_comment)
+        db.session.commit()
+        return redirect(url_for('comment', id = id))
+    else:
+        return render_template('comment.html', current_post = current_post, form = form, all_comment = all_comment)
+
+
