@@ -3,7 +3,7 @@
 
     {% for post in all_post: %}
 
-        <h1>{{ post.id }} {{ post.content }}</h1>
+        <h1> {{ post.id }}) {{ post.content }} <a href = " {{ url_for('comment', id = post.id ) }}">Comment</a> </h1> 
         
     {% endfor %}
         
