@@ -5,7 +5,9 @@
     <h1>{{ current_post.id }}) {{ current_post.content }} <a href = " {{ url_for('edit', post_number = current_post.id ) }}">Edit</a> </h1>
 
     {% for comment in all_comment: %}
-        {{ comment.id }}) {{ comment.message }} <a href = " {{ url_for('change', comment_number = comment.id ) }}">Edit</a>
+        {{ comment.id }}) {{ comment.message }} 
+        <a href = " {{ url_for('change', comment_number = comment.id ) }}">Edit</a>
+        <a href = " {{ url_for('remove', comment_id = comment.id ) }}">Remove</a>
         <br>
     {% endfor %}
 
