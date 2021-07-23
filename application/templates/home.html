@@ -3,7 +3,10 @@
 
     {% for post in all_post: %}
 
-        <h1> {{ post.id }}) {{ post.content }} <a href = " {{ url_for('forum', id = post.id ) }}">Enter</a> </h1> 
+        <h1> {{ post.id }}) {{ post.content }} 
+            <a href = " {{ url_for('forum', id = post.id ) }}">Enter</a> 
+            <a href = " {{ url_for('delete', post_id = post.id ) }}">Delete</a> 
+        </h1> 
         
     {% endfor %}
         
