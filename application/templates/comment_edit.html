@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class = 'form'>
+        <form method = 'POST' action = ''>
+            {{ form.hidden_tag() }}
+            <h1>{{ comment_to_change.id }}) {{ comment_to_change.message }}</h1>
+            <br>
+            {{ form.modify_comment.label }} {{ form.modify_comment }}
+            {{ form.change_comment }}
+        </form>
+    </div>
+
+{% endblock body %}
