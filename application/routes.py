@@ -63,7 +63,10 @@ def change(comment_number):
 @app.route('/delete/<int:post_id>')
 def delete(post_id):
     post_to_delete = Post.query.get(post_id)
+    comments_of_post = Comment.query.filter_by(post_id = post_id).all()
     db.session.delete(post_to_delete)
+    for comment in comments_of_post:
+        db.session.delete(comment)
     db.session.commit()
     return redirect(url_for('home'))
 
