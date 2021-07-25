@@ -64,6 +64,7 @@ def change(comment_number):
 def delete(post_id):
     post_to_delete = Post.query.get(post_id)
     db.session.delete(post_to_delete)
+
     db.session.commit()
     return redirect(url_for('home'))
 
