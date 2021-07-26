@@ -26,13 +26,13 @@ Delete:
 ### Project Tracking board
 I used a trello app to track progress in my project.
 ![](images/trello.png)
+Trello board can be found in https://trello.com/b/89x8nLvF/qa-project
 
 ### Entity Relationship Diagram
 For the first draft of desgining my Entity Relationship Diagram (ERD), I started with three entities. The following image is what my entity relationship digram looked like.
 
 ![](images/ERD.png)
 
-Trello board can be found in https://trello.com/b/89x8nLvF/qa-project
 
 I then decided to change it since I realised that there was no longer going to have a user log-in feature in the application.
 
