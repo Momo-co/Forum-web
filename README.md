@@ -101,6 +101,7 @@ I started off with the following risk assessment which mainly consisted of the r
 Then once I started to code my project, I have added additional risks I may encounter in running my application. 
 ![](images/RA.png)
 
+Risk assessment and Entity Relationship Digrams can be accessed at https://app.diagrams.net/ using the file in https://drive.google.com/file/d/1MhEYqQFj3dJx40I6dAXWNR_LPEyeze-v/view 
 ### Front-end
 The image below is a home page where you can view posts that have already been created. Also you can choose posts to view their full forum page which includes comments. Apart from that, there is option to delete a post you choose as well.
 ![](images/home.png)
