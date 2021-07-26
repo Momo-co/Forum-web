@@ -101,6 +101,20 @@ I started off with the following risk assessment which mainly consisted of the r
 Then once I started to code my project, I have added additional risks I may encounter in running my application. 
 ![](images/RA.png)
 
+### Front-end
+The image below is a home page where you can view posts that have already been created. Also you can choose posts to view their full forum page which includes comments. Apart from that, there is option to delete a post you choose as well.
+![](images/home.png)
+
+Pressing the post navigation bar allows you to head over to a page that lets you create a post.
+![](images/create.png)
+
+Once you choose to view a certain post, you are able to view a full forum page of that post which includes comments. In this page, it allows comments to be written and also re-rewrite the post and any comments. Comments can be removed in this page but the post cannot be removed so the forum page remains. Post can only be removed in the home page
+![](images/viewandupdate.png)
+
+There is also a seperate page that rewrites post that have already been created. Comment is also re-written in similar way.
+![](images/edit.png)
+
+
 ### Improvements needed
 Having coverage test results would ensure the validity of my app. Also unit testing, test integration would be required for improvements. 
 
@@ -112,6 +126,13 @@ Also different types of flask form input fields such as SelectField would be a g
 
 Using more bootstrap to my html templates would make my web page more appealing.
 
+
+### Author
+Suman Gurung
+
+### Acknowledgement
+Ryan Wright
+Oliver Nichols
 
 
 
