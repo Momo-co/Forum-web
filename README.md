@@ -34,7 +34,7 @@ For the first draft of desgining my Entity Relationship Diagram (ERD), I started
 ![](images/ERD.png)
 
 
-I then decided to change it since I realised that there was no longer going to have a user log-in feature in the application.
+I then decided to change it since I realised that there was no longer going to have a user log-in feature in the application. I found out about this on 13/07/2021 after a one-to-one meeting with Olver Nichols. A user profile and user login details would no longer be required, therefore I decided to get rid of the entity on that day.
 
 For the new entity relationship digram I decided to remove the user entity and its relationships towards other entities. This means that any user can use the app without any sign-up or registration.
 ![](images/newERD.png)
