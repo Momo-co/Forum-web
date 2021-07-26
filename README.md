@@ -32,6 +32,8 @@ For the first draft of desgining my Entity Relationship Diagram (ERD), I started
 
 ![](images/ERD.png)
 
+Trello board can be found in https://trello.com/b/89x8nLvF/qa-project
+
 I then decided to change it since I realised that there was no longer going to have a user log-in feature in the application.
 
 For the new entity relationship digram I decided to remove the user entity and its relationships towards other entities. This means that any user can use the app without any sign-up or registration.
