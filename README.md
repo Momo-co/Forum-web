@@ -82,6 +82,27 @@ Eigth User Story
 * So that I read discussion of the post from other users
 
 ### CI Pipeline
+CI pipeline is a digram for continous integration where it contains all the necessary tools for allowing automated code testing.
+
+### Risk Assessment 
+I started off with the following risk assessment which mainly consisted of the reliability of Google Cloud Platform server.
+
+Then once I started to code my project, I have added additional risks I may encounter in running my application. 
+
+### Improvements needed
+Having coverage test results would ensure the validity of my app. Also unit testing, test integration would be required for improvements. 
+
+Running jenkin tests would be benificial to run automated tests.
+
+I would like to have a user login features added onto the website in the future. Having a user profile makes it easier for communication to take place in my app.
+
+Also different types of flask form input fields such as SelectField would be a great addition to the app. This will provide more well rounded interaction of user interface. For instance user can have the option to select certain posts in certain user profile or own user profile.
+
+Using more bootstrap to my html templates would make my web page more appealing.
+
+
+
+
 
 
 
