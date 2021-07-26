@@ -115,6 +115,10 @@ Once you choose to view a certain post, you are able to view a full forum page o
 There is also a seperate page that rewrites post that have already been created. Comment is also re-written in similar way.
 ![](images/edit.png)
 
+### Unit Testing
+For the unit testing I attempted to use pytest for testing my test cases. However the pytest would'nt execute the test and would keep on loading. Therefore I was unable to carry out further tests such as integration test and jenkins testing.
+
+![](images/test.png)
 
 ### Improvements needed
 Having coverage test results would ensure the validity of my app. Also unit testing, test integration would be required for improvements. 
