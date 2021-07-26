@@ -23,12 +23,19 @@ Delete:
 
 ## Software Design
 
+### Project Tracking board
+I used a trello app to track progress in my project.
+![](images/trello.png)
+
 ### Entity Relationship Diagram
 For the first draft of desgining my Entity Relationship Diagram (ERD), I started with three entities. The following image is what my entity relationship digram looked like.
+
+![](images/ERD.png)
 
 I then decided to change it since I realised that there was no longer going to have a user log-in feature in the application.
 
 For the new entity relationship digram I decided to remove the user entity and its relationships towards other entities. This means that any user can use the app without any sign-up or registration.
+![](images/newERD.png)
 
 With my new entity relationship, it is a one to many relationship where a single post can contain one or many comments while an individual comment belongs to one post. 
 
@@ -83,11 +90,14 @@ Eigth User Story
 
 ### CI Pipeline
 CI pipeline is a digram for continous integration where it contains all the necessary tools for allowing automated code testing.
+![](images/cipipeline.png)
 
 ### Risk Assessment 
 I started off with the following risk assessment which mainly consisted of the reliability of Google Cloud Platform server.
+![](images/beforeRA.png)
 
 Then once I started to code my project, I have added additional risks I may encounter in running my application. 
+![](images/RA.png)
 
 ### Improvements needed
 Having coverage test results would ensure the validity of my app. Also unit testing, test integration would be required for improvements. 
